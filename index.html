@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marci Metzger Homes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- header section -->
+  <header class="header" role="banner">
+    <nav class="nav container" role="navigation" aria-label="Primary Navigation">
+      <div class="logo" aria-label="Marci Metzger Homes logo" tabindex="0" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="cursor:pointer;">
+        <h1>MARCI METZGER <span class="script">Homes</span></h1>
+      </div>
+      <ul class="nav-links centered-nav">
+        <li><a href="#get-it-sold">Get It Sold</a></li>
+        <li><a href="#search-listings">Find Your Dream Home</a></li>
+        <li><a href="#gallery">Photo Gallery</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+  <section class="hero" aria-label="Hero introduction">
+    <div class="hero-background"></div>
+    <div class="hero-overlay">
+      <div class="hero-content container">
+        <p class="small-text">MARCI METZGER &middot; THE RIDGE REALTY GROUP</p>
+        <h2>PAHRUMP REALTOR</h2>
+        <a href="tel:2069196886" class="btn">Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section id="about" class="about full-black" tabindex="-1">
+    <div class="container about-container">
+      <h3 class="section-subheader white-text">MARCI METZGER</h3>
+      <img src="images/marci-profile.jpg" alt="Marci Metzger" class="profile-img" />
+      <p class="about-sub white-text">REALTOR FOR NEARLY 3 DECADES!</p>
+      <p><a href="tel:2069196886" aria-label="Call Marci Metzger at 206-919-6886" class="white-text"><u>206-919-6886</u></a></p>
+    </div>
+  </section>
+
+  <!-- get it Sold Section -->
+  <section id="get-it-sold" class="get-it-sold container" tabindex="-1">
+    <h3 class="section-subheader black-text">Get It Sold</h3>
+    <div class="row">
+      <img src="images/kitchen.jpg" alt="Modern kitchen" loading="lazy" />
+      <div class="text black-text">
+        <h4>Top Residential Sales Last 5 Years</h4>
+        <p>We helped nearly 90 clients in 2021, and closed 28.5 million in sales! Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year.</p>
+      </div>
+    </div>
+    <div class="row reverse">
+      <div class="text black-text">
+        <h4>Don't Just List it...</h4>
+        <p>Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.</p>
+      </div>
+      <img src="images/luxury-home.jpg" alt="Luxury home with pool" loading="lazy" />
+    </div>
+    <div class="row">
+      <img src="images/keys.jpg" alt="Keys to home" loading="lazy" />
+      <div class="text black-text">
+        <h4>Guide to Buyers</h4>
+        <p>Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Listings Section -->
+  <section id="search-listings" class="full-gray" tabindex="-1" aria-label="Search Listings Section">
+    <div class="search-bg"></div>
+    <div class="search-overlay"></div>
+    <div class="search-inner container">
+      <h3 class="section-title">Find Your Dream Home</h3>
+
+      <p class="search-subtitle">Search Listings</p>
+
+      <form class="listing-form" onsubmit="return false;" aria-label="Search Listings Form">
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <select id="location" name="location" class="input-small" aria-label="Location">
+            <option value="" selected></option>
+            <option>Pahrump</option>
+            <option>Las Vegas</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="type">Type</label>
+          <select id="type" name="type" class="input-small" aria-label="Type">
+            <option value="" selected></option>
+            <option>Residential</option>
+            <option>Commercial</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="sort">Sort By</label>
+          <select id="sort" name="sort" class="input-small" aria-label="Sort By">
+            <option value="" selected></option>
+            <option>Newest</option>
+            <option>Price - Low to High</option>
+            <option>Price - High to Low</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="bedrooms">Bedrooms</label>
+          <select id="bedrooms" name="bedrooms" aria-label="Bedrooms">
+            <option>Any Number</option>
+            <option>1+</option>
+            <option>2+</option>
+            <option>3+</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="baths">Baths</label>
+          <select id="baths" name="baths" aria-label="Baths">
+            <option>Any Number</option>
+            <option>1+</option>
+            <option>2+</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="min-price">Min Price</label>
+          <input id="min-price" name="min-price" type="number" aria-label="Min Price" placeholder="$" />
+        </div>
+
+        <div class="form-group">
+          <label for="max-price">Max Price</label>
+          <input id="max-price" name="max-price" type="number" aria-label="Max Price" placeholder="$" />
+        </div>
+
+        <button type="submit" class="btn search-btn" disabled aria-disabled="true" aria-label="Search Now">SEARCH NOW</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Affiliation Logos -->
+  <section class="affiliations" aria-label="Affiliations and logos" tabindex="-1">
+    <img src="images/ridge-logo.png" alt="Ridge Realty Group logo" />
+    <img src="images/equal-housing.png" alt="Equal Housing Opportunity logo" />
+    <img src="images/realtor-logo.png" alt="Realtor logo" />
+    <img src="images/pahrump-chamber.png" alt="Pahrump Valley Chamber of Commerce logo" />
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="gallery full-black" aria-label="Photo gallery" tabindex="-1">
+    <div class="container-gallery">
+      <h3 class="section-subheader">Photo Gallery</h3>
+
+      <div class="gallery-container">
+        <button class="pagination-btn prev-btn" aria-label="Previous photo">&#10094;</button>
+        <div class="gallery-main">
+          <img id="gallery-main-img" src="images/gallery1.jpg" alt="Gallery main image" />
+        </div>
+        <button class="pagination-btn next-btn" aria-label="Next photo">&#10095;</button>
+      </div>
+
+      <div class="gallery-thumbnails" role="list" aria-label="Photo thumbnails">
+        <img src="images/gallery1.jpg" alt="Thumbnail 1" class="thumb active" role="listitem" tabindex="0" />
+        <img src="images/gallery2.jpg" alt="Thumbnail 2" class="thumb" role="listitem" tabindex="0" />
+        <img src="images/gallery3.jpg" alt="Thumbnail 3" class="thumb" role="listitem" tabindex="0" />
+        <img src="images/gallery4.jpg" alt="Thumbnail 4" class="thumb" role="listitem" tabindex="0" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services Section -->
+  <section id="services" class="services container" tabindex="-1">
+    <h3 class="section-subheader black-text">Our Services</h3>
+    <div class="services-row">
+      <div class="service">
+        <img src="images/couch.jpg" alt="Real Estate Done Right" loading="lazy" />
+        <h4>Real Estate Done Right</h4>
+        <p>Nervous about your property adventure? Don’t be. Whether you’re getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!</p>
+      </div>
+      <div class="service">
+        <img src="images/modern-house.jpg" alt="Commercial & Residential" loading="lazy" />
+        <h4>Commercial & Residential</h4>
+        <p>Large or small, condo or mansion, we can find it and get at the price that’s right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put your hard-earned dollars.</p>
+      </div>
+      <div class="service">
+        <img src="images/handshake.jpg" alt="Rely on Expertise" loading="lazy" />
+        <h4>Rely on Expertise</h4>
+        <p>If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get the answers you need in a timely fashion. We make sure you feel confident and educated every step of the way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full width banner image after Our Services -->
+  <section class="services-banner">
+    <img src="images/banner-1024x325.jpg" alt="Banner image" />
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact container" tabindex="-1">
+    <h3 class="section-subheader black-text">Call or Visit</h3>
+    <div class="contact-content">
+      <form class="contact-form" action="#" method="POST" aria-label="Contact form">
+        <label for="name" class="bold-label">Send Message</label>
+        <label for="name" class="bold-label">Name</label>
+        <input id="name" type="text" name="name" placeholder="Your name" />
+        <label for="email" class="bold-label">Email*</label>
+        <input id="email" type="email" name="email" placeholder="Your email" required />
+        <label for="message" class="bold-label">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+        <button type="submit" class="btn send-btn">Send</button>
+      </form>
+
+      <div class="contact-info" aria-label="Contact information">
+        <a href="https://wa.me/12069196886" target="_blank" class="btn whatsapp-btn" rel="noopener noreferrer">
+          Message us on WhatsApp
+        </a>
+        <address>
+          Marci Metzger - THE RIDGE REALTY GROUP<br />3190 HW-160, Suite F, Pahrump, Nevada 89048, United States<br />(206)
+          919-6886
+        </address>
+        <p>
+          <strong>Office Hours</strong><br />Open daily 8:00 am - 7:00 pm
+        </p>
+        <p>Appointments outside office hours available upon request. Just call!</p>
+      </div>
+    </div>
+
+    <div class="map-container" aria-label="Google Map showing office location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.922055036724!2d-116.00530948479667!3d36.21772217995495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8a944afb8d5bb%3A0x1a31e33db7294a08!2s3190%20NV-160%20%23f%2C%20Pahrump%2C%20NV%2089048!5e0!3m2!1sen!2sus!4v1695537757608!5m2!1sen!2sus" width="100%" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to Marci Metzger Office"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-social" aria-label="Social media links">
+      <a href="#" aria-label="Facebook"><img src="images/social-facebook.png" alt="Facebook" /></a>
+      <a href="#" aria-label="Instagram"><img src="images/social-instagram.png" alt="Instagram" /></a>
+      <a href="#" aria-label="LinkedIn"><img src="images/social-linkedin.png" alt="LinkedIn" /></a>
+      <a href="#" aria-label="Yelp"><img src="images/social-yelp.png" alt="Yelp" /></a>
+    </div>
+    <p class="copyright">
+      COPYRIGHT © 2023 MARCI METZGER HOMES - ALL RIGHTS RESERVED
+    </p>
+    <p class="powered-by">
+      Programmed by Jan Christopher
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
