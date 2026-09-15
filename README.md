@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center"> 
   <img src="./readme-banner.png" alt="Marci Metzger Homes banner" width="700">
 </p>
 
